@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tianxiang Cao</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --accent: #2563eb;
+        --accent-soft: #dbeafe;
+        --border: #dbe4f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #ffffff, var(--bg));
+        color: var(--text);
+      }
+
+      main {
+        width: min(720px, 100%);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      h1 {
+        margin: 20px 0 12px;
+        font-size: clamp(2.2rem, 7vw, 3.8rem);
+        line-height: 1.05;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: #ffffff;
+      }
+
+      .button.secondary {
+        border: 1px solid var(--border);
+        color: var(--text);
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 24px rgba(37, 99, 235, 0.12);
+      }
+
+      .button:focus-visible {
+        outline: 3px solid var(--accent-soft);
+        outline-offset: 3px;
+      }
+
+      section {
+        margin-top: 32px;
+        padding-top: 28px;
+        border-top: 1px solid var(--border);
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.1rem;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding: 28px;
+          border-radius: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="eyebrow">Personal page</span>
+      <h1>Hi, I'm Tianxiang Cao.</h1>
+      <p>
+        Welcome to my corner of the web. I use this space to share projects, experiments,
+        and notes as I continue learning and building.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="https://github.com/TianxiangCao" aria-label="Visit my GitHub profile">GitHub Profile</a>
+        <a class="button secondary" href="https://github.com/TianxiangCao/tianxiangcao.github.io" aria-label="View this site's repository on GitHub">Site Repository</a>
+      </div>
+
+      <section>
+        <h2>What you'll find here</h2>
+        <ul>
+          <li>Personal projects and code experiments</li>
+          <li>Ideas and notes worth sharing</li>
+          <li>Updates as this site grows over time</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
