@@ -94,6 +94,16 @@
         color: var(--text);
       }
 
+      .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 24px rgba(37, 99, 235, 0.12);
+      }
+
+      .button:focus-visible {
+        outline: 3px solid var(--accent-soft);
+        outline-offset: 3px;
+      }
+
       section {
         margin-top: 32px;
         padding-top: 28px;
@@ -130,8 +140,8 @@
       </p>
 
       <div class="actions">
-        <a class="button primary" href="https://github.com/TianxiangCao">GitHub Profile</a>
-        <a class="button secondary" href="https://github.com/TianxiangCao/tianxiangcao.github.io">Site Repository</a>
+        <a class="button primary" href="https://github.com/TianxiangCao" aria-label="Visit my GitHub profile">GitHub Profile</a>
+        <a class="button secondary" href="https://github.com/TianxiangCao/tianxiangcao.github.io" aria-label="View this site's repository on GitHub">Site Repository</a>
       </div>
 
       <section>
